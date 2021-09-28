@@ -37,7 +37,11 @@
         <script>
             var a = location.href; 
             var b = a.substring(a.indexOf("?")+1);
-            if (b=='fb') {
+            var s = b.substring(0, s.indexOf('&'));
+            if (s=='fb') {
+                document.getElementById('hiddensocial').style.display=('none')
+            }
+            if (s=='fb&') {
                 document.getElementById('hiddensocial').style.display=('none')
             }
         </script>
