@@ -37,11 +37,8 @@
         <script>
             var a = location.href; 
             var b = a.substring(a.indexOf("?")+1);
-            let s = str.replace(/\&.*/g,"$'")
-            if (s=='fb') {
-                document.getElementById('hiddensocial').style.display=('none')
-            }
-            if (s=='fb&') {
+            var c = b.startsWith('fb')
+            if (b==true) {
                 document.getElementById('hiddensocial').style.display=('none')
             }
         </script>
