@@ -37,7 +37,7 @@
         <script>
             var a = location.href; 
             var b = a.substring(a.indexOf("?")+1);
-            var s = b.substring(0, s.indexOf('&'));
+            let s = str.replace(/\&.*/g,"$'")
             if (s=='fb') {
                 document.getElementById('hiddensocial').style.display=('none')
             }
