@@ -15,6 +15,16 @@
 
         <h1><center>About</center></h1>
         <h2><center>My projects</center></h2>
+        <center>
+            <script src="main.js"></script>
+    <div id="show" class="show">
+        <center>
+            <h3 id="title">Showcase</h3>
+            <p id="content">Here is a few of my favorite projects</p>
+            <h3 class="button" onclick="next()">NEXT</h3>
+        </center>
+    </div>
+        </center>
         <center><a href="search">Search</a></center>
         <h3><center>Bubble</center></h3>
         <a href="https://inthebubble.github.io"><center>Bubble</center></a>
@@ -48,10 +58,22 @@
     <style>
         body {
             background-color: black;
+            font-family: 'Source Code Pro', monospace;
         }
         a,p,h1,h2,h3,center {
             color: white;
             font-family: 'Source Code Pro', monospace;
         }
+        .show {
+        border-style: solid;
+        border-color: white;
+
+    }
+    .button {
+        border-style: solid;
+        border-color: white;
+        width: 60px;
+        cursor: pointer;
+    }
     </style>
 </html>
