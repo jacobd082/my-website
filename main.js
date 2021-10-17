@@ -19,12 +19,12 @@ function slidego(_number) {
         document.getElementById('title').innerHTML=('launchr')
         document.getElementById('content').innerHTML=('Launchr is a start page for your browser. It is a way to start on the internet. There is also user-made sites on it. <a href="https://launchrgo.github.io">Open</a>')
 
-        slide = 0
+        
     }
     if (_number==4){
         document.getElementById('title').innerHTML=('Dashd')
         document.getElementById('content').innerHTML=('Dashd is a clean dashboard for you to use. You can buy themes and extentions on its store to add a personal touch. <a href="https://dashdapp.github.io/">Open</a>')
-        
+        slide = 0
     }
 
     slide = slide +=1
