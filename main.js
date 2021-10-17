@@ -21,6 +21,11 @@ function slidego(_number) {
 
         slide = 0
     }
+    if (_number==4){
+        document.getElementById('title').innerHTML=('Dashd')
+        document.getElementById('content').innerHTML=('Dashd is a clean dashboard for you to use. You can buy themes and extentions on its store to add a personal touch. <a href="https://dashdapp.github.io/">Open</a>')
+        
+    }
 
     slide = slide +=1
 }
