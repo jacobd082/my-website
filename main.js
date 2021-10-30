@@ -24,8 +24,8 @@ function slidego(_number) {
         
     }
     if (_number==2){
-        document.getElementById('title').innerHTML=('Bubble')
-        document.getElementById('content').innerHTML=('Bubble is a social media project that I have been working on. <a href="https://inthebubble.github.io/">See more...</a>')
+        document.getElementById('title').innerHTML=('Jeffrey and Mr. Krabs')
+        document.getElementById('content').innerHTML=('If you are a Discord user, I made a couple bots. Jeffrey acts as a admin keeping your servers safe. Mr. Krabs just replies when someone mentions money.')
         
     }
     if (_number==3){
