@@ -1,3 +1,16 @@
+        var i = 0;
+        var txt = 'Hi! Im Jacob!'; 
+        var speed = 100; 
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("txtstart").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }}
+        typeWriter()
+
+
 let slide = 1
 
 function next() {
