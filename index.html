@@ -1,79 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-        <title>Jacob Drath</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="J.png">
-    </head>
-    <body>
-        <center><h1 id="txtstart"></h1></center>
-        <p><center>Im a web / app develper.</center></p>
-        <br><p><center>...</center></p><br>
-
-        <h1><center>About</center></h1>
-        <h2><center>My projects</center></h2>
-        <center>
-            <script src="main.js"></script>
-    <div id="show" class="show">
-        <center>
-            <h3 id="title">Showcase</h3>
-            <p id="content">Here is a few of my favorite projects</p>
-            <h3 class="button" onclick="next()">NEXT</h3>
-        </center>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Drath</title>
+    <link rel="icon" href="J.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; font-family: 'Red Hat Mono', monospace;">
+<div style="margin: 15px;">
+    <div id="top-bar" style="position: fixed; background-color: white; width: 100%; margin: 0;">
+        <h3 style="font-family: 'Red Hat Mono', monospace; margin-left: 15px;">Jacob Drath</h3>
     </div>
-        </center>
-        <h3><center>Dashd</center></h3>
-        <center><a href="https://dashdapp.github.io/">Dashd</a></center>
-        <h3><center>GoTo URL</center></h3>
-        <a href="https://gotourl.github.io/"><center>GoTo URL</center></a>
-        <h3><center>launchr</center></h3>
-        <a href="https://launchrgo.github.io/"><center>launchr</center></a>
-        <a href="key"><center>The keyboard smash game</center></a>
-        <h3><center>Discord Bots</center></h3>
-        <a href="https://sites.google.com/view/jeffrey-the-discord-bot"><center>Jeffrey</center></a>
-        <a href="https://discord.com/api/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot"><center>Mr. Krabs</center></a>
-
-        <h2><center>Languages I know</center></h2>
-        <p><center>HTML(CSS), JavaScript, PHP, Python, Swift (UI)</center></p>
-        <br><p><center>...</center></p><br>
-
-        <h1><center>My socials</center></h1>
+    <div id="header" style="font-family: 'Red Hat Mono', monospace;">
+        <img src="blank.png" height="250">
+        <h1><b>Hi, I'm Jacob.</b></h1>
+        <h2>I'm a web / app developer and designer.
+        </h2>
+    </div>
+    <img src="blank.png" height="300px">
+</div>
+    <div style="background-color: black; color: white; font-family: 'Red Hat Mono', monospace; margin: 0;">
+        <div style="margin: 15px;" id="dev">
+        <h1 style="font-family: 'Roboto Slab', serif;" onclick="window.open('#dev', '_self')">Developer</h1>
+        <p>I started codeing during quarintine and have improved alot since. I mostly do web deveolpment, but I also can do programing and app deveolpment.</p>
+        <h3>/languages-i-know</h3>
+        <h4>/Web-deveolpment:</h4>
+        <p>HTML, CSS, PHP, JS</p>
+        <h4>/App-deveolpment:</h4>
+        <p>Swift, Swift UI</p>
+        <h4>/Programing:</h4>
+        <p>JavaScript, Python</p>
+        <p>...</p>
+        <p>As you can probably infer, I have a few projects.</p>
+        <h3>/My-projects</h3>
+            <h4>Dashd</h4>
+            <p>Dashd is a personal dashboard to store info on.</p>
+            <a href="https://dashdapp.github.io">Open</a>
+            <h4>/games</h4>
+            <a href="https://launchrgo.github.io/sites/thekeyboardsmashgame">The keyboard smash game</a>
+        <h3>/discord-bots</h3>
+        <h4>Jeffrey</h4>
+        <p>Jeffrey acts as a robot admin.</p>
+        <a href="https://sites.google.com/view/jeffrey-the-discord-bot">Learn more</a>
+        <h4>Mr. Krabs</h4>
+        <p>This bot doesn't do much... Just replies when a user talks about money or krabby patties...</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot">Get it</a>
+        <p>...</p>
+        <p>I have alot more which you can view on <a href="https://github.com/jacobd082">my github</a>.</p>
+        <br><br>
+        </div>
+    </div>
+    <div id="des" style="margin: 15px;">
+        <h1 style="font-family: 'Roboto Slab', serif; color: gray;" onclick="window.open('#des', '_self')"><center>Design</center></h1>
+        <p>I like to call myself a designer as well as a developer because, not only do I develop, I also design what I want it to do and look like.</p>
+        <p>I also make designs on <a href="https://www.redbubble.com/people/jacobd82/" class="black-set">my redbubble</a>.</p>
+        <p>I like to call my art <i>humorous</i> compared to other art.</p>
+        <a class="black-set" href="https://www.redbubble.com/people/jacobd82/">Check it out!</a>
+    </div>
+    <div id="about" style="background-color: black; color: white;">
+        <h2 style="font-family: 'Roboto Slab', serif; color: gray;"><center>My socials</center></h1>
         <center><span id="hiddensocial"><a href="https://www.instagram.com/jacob_d082/"><img src="ig.png" height="70"></a><a href="https://twitter.com/Jacobd082"><img src="twtr.png" height="70"></a></span><a href="https://www.facebook.com/profile.php?id=100070692623843"><img src="fb.png" height="70"></a></center>
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JacobTheDev" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-        <script>
-            var a = location.href; 
-            var b = a.substring(a.indexOf("?")+1);
-            var c = b.startsWith('fb')
-            if (c==true) {
-                document.getElementById('hiddensocial').style.display=('none')
-            }
-        </script><br>
         <center><img src="copy.jpeg" width="250px" onclick="alert('This site has no lisense, you cannot use its code. See more at https://choosealicense.com/no-permission/')"></center>
-    </body>
+    </div>
+    <script>
+        var a = location.href; 
+        var b = a.substring(a.indexOf("?")+1);
+        var c = b.startsWith('fb')
+        if (c==true) {
+            document.getElementById('hiddensocial').style.display=('none')
+        }
+    </script>
     <style>
-        body {
-            background-color: black;
-            font-family: 'Source Code Pro', monospace;
-        }
-        a,p,h1,h2,h3,center {
+        a {
             color: white;
-            font-family: 'Source Code Pro', monospace;
         }
-        .show {
-        border-style: solid;
-        border-color: white;
-        width: 250px;
-    }
-    .button {
-        border-style: solid;
-        border-color: white;
-        width: 60px;
-        cursor: pointer;
-    }
+        .black-set {
+            color: black;
+        }
     </style>
+</body>
 </html>
