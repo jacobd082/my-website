@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap" rel="stylesheet">
     <link rel="preload" href="./scene.json" as="fetch">
     <link rel="icon" href="favicon.png">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "3eaa182d-523e-4557-9f39-67cac1ee81ef",
+    });
+  });
+</script>
 </head>
 <body style="font-family: 'Outfit', sans-serif; background-color: rgba(25,25,25, 1); margin: 0%;">
     <div id="topbar" style="position: fixed; background-color: rgba(25,25,25, 1); margin-top: 5px; margin-left: 5px; border-radius: 15px; opacity: 90%;">
