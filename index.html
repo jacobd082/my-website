@@ -20,7 +20,27 @@
 <body style="margin: 0; font-family: 'Red Hat Mono', monospace; ">
 <div style="margin: 15px;">
     <a href="#"><div id="top-bar" style="position: fixed; background-color: white; margin: 0; border-radius: 15%; text-align: center; left: 50%; transform: translateX(-50%); color: black;">
-        <h3 style="font-family: 'Red Hat Mono', monospace; margin-left: 15px; margin-right: 15px;">Jacob Drath</h3>
+        <span><img id="pic" src="J.png" width="35"></span>
+
+        <style>
+          #pic {
+            transform: rotate(360deg);
+          }
+        </style>
+
+<script>
+  var imgr = 0
+  function img() {
+    if (imgr<361) {
+      imgr = imgr + 5
+      document.getElementById('pic').style.transform=('rotate('+String(imgr)+'deg)')
+    } else {
+      imgr = 0
+    }
+  }
+  document.addEventListener("scroll", img)
+</script>
+
     </div></a>
     <div id="header" style="font-family: 'Red Hat Mono', monospace;">
       <iframe src="s" style="border-style: none;" height="250"></iframe>
