@@ -18,6 +18,7 @@
 
 </head>
 <body style="margin: 0; font-family: 'Red Hat Mono', monospace; ">
+  <script src="animation.js"></script>
 <div style="margin: 15px;">
     <a href="#"><div id="top-bar" style="position: fixed; background-color: white; margin: 0; border-radius: 15%; text-align: center; left: 50%; transform: translateX(-50%); color: black;">
         <span><img id="pic" src="J.png" width="35"></span>
@@ -44,7 +45,7 @@
     </div></a>
     <div id="header" style="font-family: 'Red Hat Mono', monospace;">
       <iframe src="s" style="border-style: none;" height="250"></iframe>
-        <h1><b>Hi, I'm Jacob.</b></h1>
+        <h1 id="title"><b>Hi, I'm Jacob.</b></h1>
         <h2>I'm a web / app developer and programmer.
         </h2>
     </div>
@@ -130,6 +131,42 @@
     <button class="css-button-arrow--sky" onclick="window.open('https://twitter.com/Jacobd082')">Twitter</button>
     <button class="css-button-arrow--blue" onclick="window.open('https://www.facebook.com/jacobdrath/')">Facebook</button><br><br>
     <button class="css-button-gradient--8" onclick="window.open('mailto:contact@jacobdrath.co')">Contact me!</button></center>
+
+
+
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+    </div>
+    <style>
+      /* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgb(0, 0, 0);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #757575;
+  width: 0%;
+}
+    </style>
+
+
+
+
     <br><br>
     </div>
     <script>
