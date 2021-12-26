@@ -56,12 +56,14 @@
         
                 <div style="margin: 15px; margin-bottom: 0;" id="dev">
         <center>
-          <script>
-            if (window.innerWidth<566) {
-              document.getElementById('antwo').style.display=('none')
+          <style>
+            @media only screen and (max-width: 566px) {
+                #antwoo {
+                    display: none;
+                }
             }
-          </script>
-          <iframe src="d" height="545" width="566" style="border-style: none;" id="antwo">Error</iframe>
+          </style>
+          <iframe src="d" height="545" width="566" style="border-style: none;" id="antwoo">Error</iframe>
           <table>
             <tr><h1><center>My Projects:</center></h1></tr>
             <tr>
