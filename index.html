@@ -68,20 +68,20 @@
           <table>
             <tr><h1><center>My Projects:</center></h1></tr>
             <tr>
-                <td style="background-color: blue; color: white;" onclick="window.open('https://www.arealbanana.com/')">
+                <td style="background-color: blue; color: white;" onclick="window.open('https://www.arealbanana.com/')" class="pro">
                     <h2>Arealbanana Games</h2>
                     <p>This website is the place where all the games I make are held.</p>
                 </td>
-                <td style="background-color: brown; color: white;" onclick="window.open('https://dashd.app')">
+                <td style="background-color: brown; color: white;" onclick="window.open('https://dashd.app')" class="pro">
                     <h2>Dashd</h2>
                     <p>Dashd is a personal dashboard that has components on it to help you.</p>
                 </td>
                 </tr>
-                <td style="background-color: cadetblue; color: white;" onclick="window.open('https://sites.google.com/view/jeffrey-the-discord-bot')">
+                <td style="background-color: cadetblue; color: white;" onclick="window.open('https://sites.google.com/view/jeffrey-the-discord-bot')" class="pro">
                     <h2>Jeffrey (Discord Bot)</h2>
                     <p>Jeffrey is a discord bot that uses AI to monitor your server.</p>
                 </td>
-                <td style="background-color: red; color: white;" onclick="window.open('https://discord.com/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot')">
+                <td style="background-color: red; color: white;" onclick="window.open('https://discord.com/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot')" class="pro">
                     <h2>Mr. Krabs</h2>
                     <p>Mr. Krabs is a Discord bot that replys when a user talks about money... thats it.</p>
                 </td>
@@ -138,6 +138,60 @@
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div> 
+      <div id="CookCon">
+        <table>
+          <tr><td>This site uses cookies to improve, monitor, and secure this site. <a href="cookieinfo">Learn more</a></td>
+          <td><button class="css-button-sliding-to-left--sand" onclick="cookCon()">Okay, I agree</button></td>
+          </tr>
+          <script>
+            var cookv = Number(localStorage.getItem('cook'))
+            if (cookv>0) {
+              document.getElementById('CookCon').style.display=('none')
+            }
+            function cookCon() {
+              localStorage.setItem('cook', '1')
+              document.getElementById('CookCon').style.display=('none')
+            }
+          </script>
+        </table>
+        <style>
+          .css-button-sliding-to-left--sand {
+  min-width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border: 2px solid #adb5bd;
+  color: #ffffff;
+}
+.css-button-sliding-to-left--sand:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--sand:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--sand:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #adb5bd;
+}
+        </style>
+      </div>
     </div>
     <style>
       /* Style the header: fixed position (always stay at the top) */
@@ -197,12 +251,12 @@
         }
     </style>
     <style>
-        td {
+        td.pro {
             cursor: pointer;
             width: 230px;
             text-align: center;
         }
-        td:hover {
+        td.pro:hover {
             animation-name: hover;
             animation-duration: 2s;
             color: white;

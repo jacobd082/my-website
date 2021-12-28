@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie info | Jacob Drath</title>
+    <link rel="icon" href="J.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Red Hat Mono', monospace; background-color: black; margin: 0; color: white;">
+    <div style="background-color: gray; color: white; padding: 15px; cursor: pointer;" onclick="window.history.back()"><b>GO BACK</b></div>
+    <script>
+        function cleardata() {
+            localStorage.clear()
+            var cookies = document.cookie.split(";")
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+            alert('Your data was cleared!')
+        }
+    </script>
+    <div style="margin: 15px;">
+        <h1>About this sites cookies</h1>
+        <p>This site uses cookies and web beacons to store and collect data. Bellow is what these are for.</p>
+        <ol>
+            <li><b>Google Analytics</b> is used to provide information to the developer about how may people are visiting this site, where they are (State, Country, etc.), etc.</li>
+            <li><b>cookie_consent</b> is a small key that is used when a user visits this site. It's used when a user allows cookies and is used to remove the allow cookie banner. If you would like to remove this cookie click <a href="javascript:cleardata()">here</a>.</li>
+            <li><b>User data</b> is information that the user enters into the site. If you would like to remove this data click <a href="javascript:cleardata()">here</a>. Please note this this will only remove local data, and not anything placed into a outside database. If you would like help erasing that, do not hesitate to contact me.</li>
+        </ol>
+    </div>
+    <style>
+        a {
+            color: white;
+        }
+    </style>
+</body>
+</html>
