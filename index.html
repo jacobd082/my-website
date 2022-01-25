@@ -25,6 +25,17 @@
       gtag('config', 'G-TDQG4E8MZM');
     </script>
 </head>
+<style>
+  body {
+    position: relative;
+    animation-name: start;
+    animation-duration: 2s;
+  }
+  @keyframes start {
+    0%{top: 50px; opacity: 0%;}
+    100%{top: 0px; opacity: 100%;}
+  }
+</style>
 <body style="margin: 0; font-family: 'Red Hat Mono', monospace; ">
   <script src="animation.js"></script>
 <div style="margin: 15px;">
@@ -52,10 +63,19 @@
 
     </div></a>
     <div id="header" style="font-family: 'Red Hat Mono', monospace;">
-      <iframe src="s" style="border-style: none;" height="250"></iframe>
+      <img src="blank.png" height="40px"><br>
+      <span id="obj1"><p><iframe src="s" style="border-style: none;" height="250"></iframe></p></span>
+      <style>
+        @media only screen and (min-width: 956px) {
+            #obj1 {
+              text-align: right; position: relative; top: 150px;
+            }
+        }
+      </style>
+      <!--<iframe src="s" style="border-style: none;" height="250"></iframe>-->
         <h1 id="title"><b>Hi, I'm Jacob.</b></h1>
         <h2>I'm a web / app developer and programmer.
-        </h2>
+      </div>
     </div>
     <img src="blank.png" height="300px">
 </div>
