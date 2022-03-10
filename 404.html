@@ -6,236 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&#128371;&#128104;&#8205;&#129455;</title>
     <link rel="icon" href="https://www.jacobdrath.co/J.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
 </head>
-<body>
-    <center>
-        <div id="body">
-            <h1>Page not found</h1>
-            <p><span id="page"><script>
-                var a = location.href; 
-                var b = a.substring(a.indexOf("/")+1);
-                var b = b.substring(b.indexOf("/")+1);
-                var b = b.substring(b.indexOf("/")+1);
-                document.getElementById('page').innerHTML=('/'+b)</script> could not be found on this server.</p>
-                <p>I tried to find it and I couldn't.<br>Sorry but, not my fault.</p>
-                <button class="css-button-sliding-to-left--grey" onclick="window.open('mailto:contact@jacobdrath.co')">Contact me!</button>
-                <button class="css-button-sliding-to-left--grey" onclick="window.open('https://www.jacobdrath.co', '_self')">Run to home</button>
-            </center>
-
-        </div>
-    </center>
-    ><script>
-      var color = ('#'+Math.floor(Math.random()*16777215).toString(16))
-      document.body.style.background=color
+<body style="font-family: 'Fredoka', sans-serif;">
+    <div><img src="https://zzz.jacobdrath.co/J.png" height="30"></div>
+    <br><br><br><br>
+    <img src="https://media.crater.jacobdrath.co/x.gif" width="200">
+    <br>
+    <h1 style="padding: 0; margin: 0;">Whoops! Page Not Found!</h1>
+    Error Code: 404
+    <br>
+    <span id="page"><script>
+    var a = location.href; 
+    var b = a.substring(a.indexOf("/")+1);
+    var b = b.substring(b.indexOf("/")+1);
+    var b = b.substring(b.indexOf("/")+1);
+    document.getElementById('page').innerHTML=('/'+b)</script> could not be found on this server.</p>
+    <p>You can search this site to find your place:</p>
+    <script async src="https://cse.google.com/cse.js?cx=c2459b4af005e45ad">
     </script>
+    <div class="gcse-search"></div>
+    <p>Or use Quick Links:</p>
+    <span class="link" onclick="window.open('https://jacobdrath.co')">Homepage</span>
+    <span class="link" onclick="window.open('https://zzz.jacobdrath.co/#my-projects')">My Projects</span>
 </body>
 <style>
-    body {
-        background-color: rgb(106, 106, 207);
-        font-family: sans-serif;
+    span.link {
+        padding: 8px;
+        background-color: black;
+        border-radius: 500px;
+        color: white;
     }
-    #body {
-        background-color: white;
-        width: fit-content;
-        padding: 5px;
-        border-style: dashed;
-        border-color: gray;
-    }
-.css-button-gradient--8 {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border-radius: 5px;
-      border: none;
-      background-size: 120% auto;
-      background-image: linear-gradient(315deg, #7b4397 0%, #dc2430 75%);
-    }
-    .css-button-gradient--8:hover {
-      background-position: right center;
-    }
-    .css-button-gradient--8:active {
-      top: 2px;
-    }
-    
-    .css-button-sliding-to-left--grey {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border-radius: 5px;
-      z-index: 0;
-      background: #fff;
-      overflow: hidden;
-      border: 2px solid #495057;
-      color: #495057;
-    }
-    .css-button-sliding-to-left--grey:hover {
-      color: #fff;
-    }
-    .css-button-sliding-to-left--grey:hover:after {
-      width: 100%;
-    }
-    .css-button-sliding-to-left--grey:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      transition: all 0.3s ease;
-      left: 0;
-      top: 0;
-      width: 0;
-      height: 100%;
-      background: #495057;
-    }
-    .css-button-retro--sky {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border: 1px solid #000;
-      color: #000;
-      background: transparent;
-    }
-    .css-button-retro--sky:hover:after {
-      top: 0;
-      left: 0;
-    }
-    .css-button-retro--sky:after {
-      content: "";
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      height: 100%;
-      top: 5px;
-      left: 5px;
-      transition: 0.2s;
-      background-color: #3a86ff;
-    }
-    .css-button-arrow--rose {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #ff6392
-    }
-    .css-button-arrow--rose:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--rose:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--rose:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    }
-    .css-button-arrow--sky {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #3a86ff
-    }
-    .css-button-arrow--sky:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--sky:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--sky:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    
-    }
-    
-    .css-button-arrow--blue {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #3d348b
-    }
-    .css-button-arrow--blue:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--blue:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--blue:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    }
-    </style>
 </style>
 </html>
