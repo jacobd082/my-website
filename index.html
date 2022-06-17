@@ -1,511 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="J.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+  <head>
+    <link rel="icon" href="J.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable = no"
+    />
     <title>Jacob Drath</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="1 days">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="description" content="Hey, I'm Jacob. I make art, code, and lots of other stuff.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="description"
+      content="Hey, I'm Jacob. I make art, code, and lots of other stuff."
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDQG4E8MZM"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TDQG4E8MZM"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-TDQG4E8MZM');
+      gtag("config", "G-TDQG4E8MZM");
     </script>
-</head>
-<style>
-  body {
-    position: relative;
-    animation-name: start;
-    animation-duration: 2s;
-  }
-  @keyframes start {
-    0%{top: 50px; opacity: 0%;}
-    100%{top: 0px; opacity: 100%;}
-  }
-</style>
-<body style="margin: 0; font-family: 'Red Hat Mono', monospace; ">
+  </head>
+  <style>
+    body {
+      position: relative;
+      animation-name: start;
+      animation-duration: 2s;
+    }
+    @keyframes start {
+      0% {
+        top: 50px;
+        opacity: 0%;
+      }
+      100% {
+        top: 0px;
+        opacity: 100%;
+      }
+    }
+  </style>
+  <body style="margin: 0; font-family: 'Red Hat Mono', monospace">
     <script>
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-    s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
-        configUrl: 'https://chats.landbot.io/v3/H-1162463-8VGW7JE9MPSPJ1X7/index.json',
-      });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
-</script>
-  <script src="animation.js"></script>
-<div style="margin: 15px;">
-    <a href="#"><div id="top-bar" style="position: fixed; background-color: white; margin: 0; border-radius: 15%; text-align: center; left: 50%; transform: translateX(-50%); color: black;">
-        <span><img id="pic" src="J.png" width="35"></span>
+      window.addEventListener("mouseover", initLandbot, { once: true });
+      window.addEventListener("touchstart", initLandbot, { once: true });
+      var myLandbot;
+      function initLandbot() {
+        if (!myLandbot) {
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.addEventListener("load", function () {
+            var myLandbot = new Landbot.Livechat({
+              configUrl:
+                "https://chats.landbot.io/v3/H-1162463-8VGW7JE9MPSPJ1X7/index.json",
+            });
+          });
+          s.src = "https://cdn.landbot.io/landbot-3/landbot-3.0.0.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+    </script>
+    <script src="animation.js"></script>
+    <div style="margin: 15px">
+      <a href="#"
+        ><div
+          id="top-bar"
+          style="
+            position: fixed;
+            background-color: white;
+            margin: 0;
+            border-radius: 15%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            color: black;
+          "
+        >
+          <span><img id="pic" src="J.png" width="35" /></span>
 
+          <style>
+            #pic {
+              transform: rotate(360deg);
+            }
+          </style>
+
+          <script>
+            var imgr = 0;
+            function img() {
+              if (imgr < 361) {
+                imgr = imgr + 5;
+                document.getElementById("pic").style.transform =
+                  "rotate(" + String(imgr) + "deg)";
+              } else {
+                imgr = 0;
+              }
+            }
+            document.addEventListener("scroll", img);
+          </script>
+          <script src="AprilFools.js"></script></div
+      ></a>
+      <div id="header" style="font-family: 'Red Hat Mono', monospace">
+        <img src="blank.png" height="40px" /><br />
+        <span id="obj1" class="3d"
+          ><p>
+            <iframe src="s" style="border-style: none" height="250"></iframe></p
+        ></span>
         <style>
-          #pic {
-            transform: rotate(360deg);
+          @media only screen and (min-width: 956px) {
+            #obj1 {
+              text-align: right;
+              position: relative;
+              top: 150px;
+            }
           }
         </style>
-
-<script>
-  var imgr = 0
-  function img() {
-    if (imgr<361) {
-      imgr = imgr + 5
-      document.getElementById('pic').style.transform=('rotate('+String(imgr)+'deg)')
-    } else {
-      imgr = 0
-    }
-  }
-  document.addEventListener("scroll", img)
-</script>
-        <script src="AprilFools.js"></script>
-    </div></a>
-    <div id="header" style="font-family: 'Red Hat Mono', monospace;">
-      <img src="blank.png" height="40px"><br>
-      <span id="obj1" class="3d"><p><iframe src="s" style="border-style: none;" height="250"></iframe></p></span>
-      <style>
-        @media only screen and (min-width: 956px) {
-            #obj1 {
-              text-align: right; position: relative; top: 150px;
-            }
-        }
-      </style>
-      <!--<iframe src="s" style="border-style: none;" height="250"></iframe>-->
+        <!--<iframe src="s" style="border-style: none;" height="250"></iframe>-->
         <h1 id="title"><b>Hi, I'm Jacob.</b></h1>
         <h2>I'm a web / app developer and programmer.</h2>
+      </div>
     </div>
-  </div>
-    <img src="blank.png" height="300px">
+    <img src="blank.png" height="300px" />
 
+    <div
+      style="
+        background-color: black;
+        color: white;
+        font-family: 'Red Hat Mono', monospace;
+        margin: 0;
+      "
+    >
+      <svg
+        style="background-color: white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#000000"
+          fill-opacity="1"
+          d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
 
-    <div style="background-color: black; color: white; font-family: 'Red Hat Mono', monospace; margin: 0;">
-    <svg style="background-color: white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        
-                <div style="margin: 15px; margin-bottom: 0;" id="dev">
+      <div style="margin: 15px; margin-bottom: 0" id="dev">
         <center>
           <style>
             @media only screen and (max-width: 566px) {
-                #antwoo {
-                    display: none;
-                }
+              #antwoo {
+                display: none;
+              }
             }
           </style>
-          <iframe src="d" height="545" width="566" style="border-style: none;" id="antwoo" class="3d">Error</iframe>
+          <iframe
+            src="d"
+            height="545"
+            width="566"
+            style="border-style: none"
+            id="antwoo"
+            class="3d"
+            >Error</iframe
+          >
           <table>
-            <tr><h1 id="my-projects"><center>My Projects:</center></h1></tr>
             <tr>
-                <td style="background-color: blue; color: white;" onclick="window.open('https://www.arealbanana.com/')" class="pro">
-                    <h2>Arealbanana Games</h2>
-                    <p>This website is the place where all the games I make are held.</p>
-                </td>
-                <td style="background-color: #1DA1F2; color: white;" onclick="window.open('chick-nug-bot')" class="pro">
-                    <h2>Chicken Nugget Bot</h2>
-                    <p>An bot on Twitter. Learn more.</p>
-                </td>
-                </tr>
-                <td style="background-color: red; color: white;" onclick="window.open('https://discord.com/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot')" class="pro">
-                    <h2>Mr. Krabs</h2>
-                    <p>Mr. Krabs is a Discord bot that replys when a user talks about money... thats it.</p>
-                </td>
-                <td style="background-color: #00e1ff;" class="pro" onclick="window.open('https://wx.jacobdrath.co')">
-                  <h2>Simple Weather</h2>
-                  <p>A weather app that doesn't have any unnecessary data or features.</p>
-                </td>
-        </table>
-        <table>
-          <tr>
-            <td style="background-color: black; color: white; cursor: pointer;"
-              onclick="window.open('3d')">
-                  <h2>3D Projects</h2>
+              <h1 id="my-projects"><center>My Projects:</center></h1>
+            </tr>
+            <tr>
+              <td
+                style="background-color: blue; color: white"
+                onclick="window.open('https://www.arealbanana.com/')"
+                class="pro"
+              >
+                <h2>Arealbanana Games</h2>
+                <p>
+                  This website is the place where all the games I make are held.
+                </p>
+              </td>
+              <td
+                style="background-color: #1da1f2; color: white"
+                onclick="window.open('chick-nug-bot')"
+                class="pro"
+              >
+                <h2>Chicken Nugget Bot</h2>
+                <p>An bot on Twitter. Learn more.</p>
+              </td>
+            </tr>
+            <td
+              style="background-color: red; color: white"
+              onclick="window.open('https://discord.com/oauth2/authorize?client_id=881722549434720267&permissions=274877983744&scope=bot')"
+              class="pro"
+            >
+              <h2>Mr. Krabs</h2>
+              <p>
+                Mr. Krabs is a Discord bot that replys when a user talks about
+                money... thats it.
+              </p>
             </td>
-          </tr>
-        </table>
-    <br><br>
-    <h1>About me:</h1>
-        <p>I have always had a interest in computers. About a year ago, I learned HTML. From there I have improved a lot.</p>
-        <h2>Languages I know:</h2>
-        <p>English (duh)<br>&lt;html&gt;<br>
-        console.log("JavaScript")<br>
-        echo "PHP";<br>
-        print("Swift")<br>
-        Text("Swift UI")<br>
-        print("Python")
-        </p>
-        <button class="css-button-gradient--8" onclick="window.open('mailto:contact@jacobdrath.co')">Contact me!</button></center>
-    
-        </div>
-       </div><svg style="background-color: white; margin-top: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-    
-        
-    <div id="des" style="margin: 15px; background-color: white;">
-        <center>
-            <h1>Design:</h1>
-            <h2>Physical:</h2>
-            <p>I like to make funny stickers and things. You can find them on my RedBubble.</p>
-            <button class="css-button-sliding-to-left--grey" onclick="window.open('https://www.redbubble.com/people/jacobd82/')">Open</button>
-            <h2>Virtual:</h2>
-            <h3>3D:</h3>
-            <button class="css-button-sliding-to-left--grey" onclick="window.open('3d')" >See 3D art</button>
-        
-    
-    <div id="about" style="background-color: black; color: white; margin-top: 0; text-align: center;">
-    <svg style="background-color: white; margin-left: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        
-    <br><br><br>
-    <h1>Follow me:</h1>
-    <button class="css-button-arrow--rose" onclick="window.open('https://www.instagram.com/jacob_d082/')">Instagram</button>
-    <button class="css-button-arrow--sky" onclick="window.open('https://twitter.com/Jacobd082')">Twitter</button>
-    <button class="css-button-arrow--blue" onclick="window.open('https://www.facebook.com/jacobdrath/')">Facebook</button><br><br>
-    <button class="css-button-gradient--8" onclick="window.open('mailto:contact@jacobdrath.co')">Contact me!</button>
-
-
-
-    <div class="header">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div> 
-      <div id="CookCon">
-        <table>
-          <tr><td>This site uses cookies to improve, monitor, and secure this site. <a href="cookieinfo">Learn more</a></td>
-          <td><button class="css-button-sliding-to-left--sand" onclick="cookCon()">Okay, I agree</button></td>
-          </tr>
-          <script>
-            var cookv = Number(localStorage.getItem('cook'))
-            if (cookv>0) {
-              document.getElementById('CookCon').style.display=('none')
-            }
-            function cookCon() {
-              localStorage.setItem('cook', '1')
-              document.getElementById('CookCon').style.display=('none')
-            }
-          </script>
-        </table>
-        <style>
-          .css-button-sliding-to-left--sand {
-  min-width: 130px;
-  height: 40px;
-  color: rgb(255, 255, 255);
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  z-index: 0;
-  background: rgb(0, 0, 0);
-  overflow: hidden;
-  border: 2px solid #adb5bd;
-  color: #ffffff;
-}
-.css-button-sliding-to-left--sand:hover {
-  color: #fff;
-}
-.css-button-sliding-to-left--sand:hover:after {
-  width: 100%;
-}
-.css-button-sliding-to-left--sand:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s ease;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #adb5bd;
-}
-        </style>
+            <td
+              style="background-color: #00e1ff"
+              class="pro"
+              onclick="window.open('https://wx.jacobdrath.co')"
+            >
+              <h2>Simple Weather</h2>
+              <p>
+                A weather app that doesn't have any unnecessary data or
+                features.
+              </p>
+            </td>
+          </table>
+          <table>
+            <tr>
+              <td
+                style="background-color: black; color: white; cursor: pointer"
+                onclick="window.open('3d')"
+              >
+                <h2>3D Projects</h2>
+              </td>
+            </tr>
+          </table>
+          <br /><br />
+          <h1>About me:</h1>
+          <p>
+            I have always had a interest in computers. About a year ago, I
+            learned HTML. From there I have improved a lot.
+          </p>
+          <h2>Languages I know:</h2>
+          <p>
+            English (duh)<br />&lt;html&gt;<br />
+            console.log("JavaScript")<br />
+            echo "PHP";<br />
+            print("Swift")<br />
+            Text("Swift UI")<br />
+            print("Python")
+          </p>
+          <button
+            class="css-button-gradient--8"
+            onclick="window.open('mailto:contact@jacobdrath.co')"
+          >
+            Contact me!
+          </button>
+        </center>
       </div>
     </div>
-    <style>
-      /* Style the header: fixed position (always stay at the top) */
-.header {
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #000000;
-}
+    <svg
+      style="background-color: white; margin-top: 0"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#000000"
+        fill-opacity="1"
+        d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: rgb(0, 0, 0);
-}
+    <div id="des" style="margin: 15px; background-color: white">
+      <center>
+        <h1>Design:</h1>
+        <h2>Physical:</h2>
+        <p>
+          I like to make funny stickers and things. You can find them on my
+          RedBubble.
+        </p>
+        <button
+          class="css-button-sliding-to-left--grey"
+          onclick="window.open('https://www.redbubble.com/people/jacobd82/')"
+        >
+          Open
+        </button>
+        <h2>Virtual:</h2>
+        <h3>3D:</h3>
+        <button
+          class="css-button-sliding-to-left--grey"
+          onclick="window.open('3d')"
+        >
+          See 3D art
+        </button>
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: #757575;
-  width: 0%;
-}
-    </style>
-
-
-
-
-    <br><br>
-    </div>
-    <script>
-        var a = location.href; 
-        var b = a.substring(a.indexOf("?")+1);
-        var c = b.startsWith('fb')
-        if (c==true) {
-            document.getElementById('hiddensocial').style.display=('none')
-        }
-        function t(_text) {
-          console.log(_text)
-        }
-        t('──────█───███────███───███████─███████──')
-        t('──────█──██─█───██─██──█─────█─█─────█──')
-        t('──────█──█──█──██───█──█─────█─█────██──')
-        t('──────█─██████─█───────█─────█─██████───')
-        t('─█────█─█────█─█───────█─────█─█────██──')
-        t('─█───██─█────█─█────█──█─────█─█─────█──')
-        t('─██──█──█────█─██──██──█─────█─█───███──')
-        t('──████──█────█──████───███████─█████────')
-    </script>
-    <style>
-        a {
+        <div
+          id="about"
+          style="
+            background-color: black;
             color: white;
-        }
-        .black-set {
+            margin-top: 0;
+            text-align: center;
+          "
+        >
+          <svg
+            style="background-color: white; margin-left: 0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#000000"
+              fill-opacity="1"
+              d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,181.3C840,149,960,107,1080,80C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+
+          <br /><br /><br />
+          <h1>Follow me:</h1>
+          <button
+            class="css-button-arrow--rose"
+            onclick="window.open('https://www.instagram.com/jacob_d082/')"
+          >
+            Instagram
+          </button>
+          <button
+            class="css-button-arrow--sky"
+            onclick="window.open('https://twitter.com/Jacobd082')"
+          >
+            Twitter
+          </button>
+          <button
+            class="css-button-arrow--blue"
+            onclick="window.open('https://www.facebook.com/jacobdrath/')"
+          >
+            Facebook</button
+          ><br /><br />
+          <button
+            class="css-button-gradient--8"
+            onclick="window.open('mailto:contact@jacobdrath.co')"
+          >
+            Contact me!
+          </button>
+
+          <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+            <div id="CookCon">
+              <table>
+                <tr>
+                  <td>
+                    This site uses cookies to improve, monitor, and secure this
+                    site. <a href="cookieinfo">Learn more</a>
+                  </td>
+                  <td>
+                    <button
+                      class="css-button-sliding-to-left--sand"
+                      onclick="cookCon()"
+                    >
+                      Okay, I agree
+                    </button>
+                  </td>
+                </tr>
+                <script>
+                  var cookv = Number(localStorage.getItem("cook"));
+                  if (cookv > 0) {
+                    document.getElementById("CookCon").style.display = "none";
+                  }
+                  function cookCon() {
+                    localStorage.setItem("cook", "1");
+                    document.getElementById("CookCon").style.display = "none";
+                  }
+                </script>
+              </table>
+              <style>
+                .css-button-sliding-to-left--sand {
+                  min-width: 130px;
+                  height: 40px;
+                  color: rgb(255, 255, 255);
+                  padding: 5px 10px;
+                  font-weight: bold;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                  position: relative;
+                  display: inline-block;
+                  outline: none;
+                  border-radius: 5px;
+                  z-index: 0;
+                  background: rgb(0, 0, 0);
+                  overflow: hidden;
+                  border: 2px solid #adb5bd;
+                  color: #ffffff;
+                }
+                .css-button-sliding-to-left--sand:hover {
+                  color: #fff;
+                }
+                .css-button-sliding-to-left--sand:hover:after {
+                  width: 100%;
+                }
+                .css-button-sliding-to-left--sand:after {
+                  content: "";
+                  position: absolute;
+                  z-index: -1;
+                  transition: all 0.3s ease;
+                  left: 0;
+                  top: 0;
+                  width: 0;
+                  height: 100%;
+                  background: #adb5bd;
+                }
+              </style>
+            </div>
+          </div>
+          <style>
+            /* Style the header: fixed position (always stay at the top) */
+            .header {
+              position: fixed;
+              bottom: 0;
+              z-index: 1;
+              width: 100%;
+              background-color: #000000;
+            }
+
+            /* The progress container (grey background) */
+            .progress-container {
+              width: 100%;
+              height: 8px;
+              background: rgb(0, 0, 0);
+            }
+
+            /* The progress bar (scroll indicator) */
+            .progress-bar {
+              height: 8px;
+              background: #757575;
+              width: 0%;
+            }
+          </style>
+
+          <br /><br />
+        </div>
+        <script>
+          var a = location.href;
+          var b = a.substring(a.indexOf("?") + 1);
+          var c = b.startsWith("fb");
+          if (c == true) {
+            document.getElementById("hiddensocial").style.display = "none";
+          }
+          function t(_text) {
+            console.log(_text);
+          }
+          t("──────█───███────███───███████─███████──");
+          t("──────█──██─█───██─██──█─────█─█─────█──");
+          t("──────█──█──█──██───█──█─────█─█────██──");
+          t("──────█─██████─█───────█─────█─██████───");
+          t("─█────█─█────█─█───────█─────█─█────██──");
+          t("─█───██─█────█─█────█──█─────█─█─────█──");
+          t("─██──█──█────█─██──██──█─────█─█───███──");
+          t("──████──█────█──████───███████─█████────");
+        </script>
+        <style>
+          a {
+            color: white;
+          }
+          .black-set {
             color: black;
-        }
-    </style>
-    <style>
-        td.pro {
+          }
+        </style>
+        <style>
+          td.pro {
             cursor: pointer;
             width: 230px;
             text-align: center;
-        }
-        td.pro:hover {
+          }
+          td.pro:hover {
             animation-name: hover;
             animation-duration: 2s;
             color: white;
             background-color: black;
-        }
-        @keyframes hover {
-            10%{filter: blur(1px);}
-            100%{filter: blur(0px);}
-        }
-        .css-button-gradient--8 {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border-radius: 5px;
-      border: none;
-      background-size: 120% auto;
-      background-image: linear-gradient(315deg, #7b4397 0%, #dc2430 75%);
-    }
-    .css-button-gradient--8:hover {
-      background-position: right center;
-    }
-    .css-button-gradient--8:active {
-      top: 2px;
-    }
-    
-    .css-button-sliding-to-left--grey {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border-radius: 5px;
-      z-index: 0;
-      background: #fff;
-      overflow: hidden;
-      border: 2px solid #495057;
-      color: #495057;
-    }
-    .css-button-sliding-to-left--grey:hover {
-      color: #fff;
-    }
-    .css-button-sliding-to-left--grey:hover:after {
-      width: 100%;
-    }
-    .css-button-sliding-to-left--grey:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      transition: all 0.3s ease;
-      left: 0;
-      top: 0;
-      width: 0;
-      height: 100%;
-      background: #495057;
-    }
-    .css-button-retro--sky {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      border: 1px solid #000;
-      color: #000;
-      background: transparent;
-    }
-    .css-button-retro--sky:hover:after {
-      top: 0;
-      left: 0;
-    }
-    .css-button-retro--sky:after {
-      content: "";
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      height: 100%;
-      top: 5px;
-      left: 5px;
-      transition: 0.2s;
-      background-color: #3a86ff;
-    }
-    .css-button-arrow--rose {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #ff6392
-    }
-    .css-button-arrow--rose:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--rose:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--rose:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    }
-    .css-button-arrow--sky {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #3a86ff
-    }
-    .css-button-arrow--sky:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--sky:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--sky:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    
-    }
-    
-    .css-button-arrow--blue {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #3d348b
-    }
-    .css-button-arrow--blue:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left:8px;
-    }
-    .css-button-arrow--blue:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--blue:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    }
-    </style>
+          }
+          @keyframes hover {
+            10% {
+              filter: blur(1px);
+            }
+            100% {
+              filter: blur(0px);
+            }
+          }
+          .css-button-gradient--8 {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            background-size: 120% auto;
+            background-image: linear-gradient(315deg, #7b4397 0%, #dc2430 75%);
+          }
+          .css-button-gradient--8:hover {
+            background-position: right center;
+          }
+          .css-button-gradient--8:active {
+            top: 2px;
+          }
 
+          .css-button-sliding-to-left--grey {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            z-index: 0;
+            background: #fff;
+            overflow: hidden;
+            border: 2px solid #495057;
+            color: #495057;
+          }
+          .css-button-sliding-to-left--grey:hover {
+            color: #fff;
+          }
+          .css-button-sliding-to-left--grey:hover:after {
+            width: 100%;
+          }
+          .css-button-sliding-to-left--grey:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: #495057;
+          }
+          .css-button-retro--sky {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border: 1px solid #000;
+            color: #000;
+            background: transparent;
+          }
+          .css-button-retro--sky:hover:after {
+            top: 0;
+            left: 0;
+          }
+          .css-button-retro--sky:after {
+            content: "";
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 5px;
+            left: 5px;
+            transition: 0.2s;
+            background-color: #3a86ff;
+          }
+          .css-button-arrow--rose {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            overflow: hidden;
+            border-radius: 5px;
+            border: none;
+            background-color: #ff6392;
+          }
+          .css-button-arrow--rose:hover {
+            border-radius: 5px;
+            padding-right: 24px;
+            padding-left: 8px;
+          }
+          .css-button-arrow--rose:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+          .css-button-arrow--rose:after {
+            content: "\00BB";
+            position: absolute;
+            opacity: 0;
+            font-size: 20px;
+            line-height: 40px;
+            top: 0;
+            right: -20px;
+            transition: 0.4s;
+          }
+          .css-button-arrow--sky {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            overflow: hidden;
+            border-radius: 5px;
+            border: none;
+            background-color: #3a86ff;
+          }
+          .css-button-arrow--sky:hover {
+            border-radius: 5px;
+            padding-right: 24px;
+            padding-left: 8px;
+          }
+          .css-button-arrow--sky:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+          .css-button-arrow--sky:after {
+            content: "\00BB";
+            position: absolute;
+            opacity: 0;
+            font-size: 20px;
+            line-height: 40px;
+            top: 0;
+            right: -20px;
+            transition: 0.4s;
+          }
+
+          .css-button-arrow--blue {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            overflow: hidden;
+            border-radius: 5px;
+            border: none;
+            background-color: #3d348b;
+          }
+          .css-button-arrow--blue:hover {
+            border-radius: 5px;
+            padding-right: 24px;
+            padding-left: 8px;
+          }
+          .css-button-arrow--blue:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+          .css-button-arrow--blue:after {
+            content: "\00BB";
+            position: absolute;
+            opacity: 0;
+            font-size: 20px;
+            line-height: 40px;
+            top: 0;
+            right: -20px;
+            transition: 0.4s;
+          }
+        </style>
+      </center>
+    </div>
+  </body>
+</html>
