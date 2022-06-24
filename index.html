@@ -152,7 +152,7 @@
 
         function handData(e) {
             if (!(e.mainsite == true)) {
-            document.body.innerHTML=("<h1>Something went wrong!</h1><p style='color: gray;'>***START OF DEBUG INFO***</p><p>HTTP(S) ERROR CODE: 503</p><p>Server Availability Response: "+data.mainsite+"</p><p style='color: gray;'>***END OF DEBUG INFO***</p>")
+            document.body.innerHTML=("<h1>Something went wrong!</h1><p style='color: gray;'>***START OF DEBUG INFO***</p><p>HTTP(S) ERROR CODE: 503</p><p>Server Availability Response: "+e.mainsite+"</p><p style='color: gray;'>***END OF DEBUG INFO***</p>")
           }
         }
 
