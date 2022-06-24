@@ -146,6 +146,17 @@
           t("─█───██─█────█─█────█──█─────█─█─────█──");
           t("─██──█──█────█─██──██──█─────█─█───███──");
           t("──████──█────█──████───███████─█████────");
+          fetch('https://zzz.jacobdrath.co/siteonlineapi/api.json')
+                .then(response => response.json())
+                .then(data => handData(data));
+
+        function handData(e) {
+            if (!(e.mainsite == true)) {
+            document.body.innerHTML=("<h1>Something went wrong!</h1><p style='color: gray;'>***START OF DEBUG INFO***</p><p>HTTP(S) ERROR CODE: 503</p><p>Server Availability Response: "+data.mainsite+"</p><p style='color: gray;'>***END OF DEBUG INFO***</p>")
+          }
+        }
+
+
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
