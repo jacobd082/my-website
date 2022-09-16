@@ -33,8 +33,9 @@ p, span, a {
     100%{opacity: 100%;}
 }
 body {
-    animation: main 2s;
+    animation: main 1s;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
