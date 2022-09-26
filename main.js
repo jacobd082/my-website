@@ -1,9 +1,9 @@
 import './style.css'
-import './space.png'
+import spaceImg from './space.png'
 import './mouse.png'
-import './moon.jpg'
-import './galaxy.png'
-import './earth.jpg'
+import moonImg from './moon.jpg'
+import galImg from './galaxy.png'
+import earthImg from './earth.jpg'
 
 import * as THREE from 'three';
 
@@ -57,12 +57,12 @@ Array(200).fill().forEach(addStar);
 
 
 
-const spaceTexture = new THREE.TextureLoader().load('space.png');
+const spaceTexture = new THREE.TextureLoader().load(spaceImg);
 scene.background = spaceTexture;
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const moonTexture = new THREE.TextureLoader().load(moonImg);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(0.8,40,40),
@@ -80,7 +80,7 @@ moon.position.x  = 8;
 
 // Earth
 
-const earthTexture = new THREE.TextureLoader().load('earth.jpg');
+const earthTexture = new THREE.TextureLoader().load(earthImg);
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3,40,40),
