@@ -1,4 +1,9 @@
 import './style.css'
+import './space.png'
+import './mouse.png'
+import './moon.jpg'
+import './galaxy.png'
+import './earth.jpg'
 
 import * as THREE from 'three';
 
