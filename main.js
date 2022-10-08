@@ -95,10 +95,18 @@ earth.position.z = -15;
 earth.position.x  = 0;
 
 
-
+var lastScrollTop = 0;
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  earth.rotation.y += 0.05;
+  var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  if (st > lastScrollTop){
+     // downscroll code
+    earth.rotation.y += 0.05;
+  } else {
+     // upscroll code
+    earth.rotation.y -= 0.05;
+  }
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   //moon.rotation.y += 0.075;
   //moon.rotation.z += 0.05;
 
@@ -118,7 +126,7 @@ document.body.onscroll = moveCamera
 
 function animate() {
   requestAnimationFrame(animate);
-
+  earth.rotation.y += 0.001;
   /*torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
