@@ -11,7 +11,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
@@ -125,15 +125,9 @@ function moveCamera() {
 document.body.onscroll = moveCamera
 
 function reportWindowSize() {
-  Toastify({
-    text: "To apply window resize, reload the page.",
-    duration: 3000,
-    destination: "/",
-    gravity: "bottom", // `top` or `bottom`
-    position: "right",
-    className: "toast",
-    onClick: function(){} // Callback after click
-  }).showToast();
+  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  
 }
 
 window.onresize = reportWindowSize;
