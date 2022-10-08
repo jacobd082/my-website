@@ -124,9 +124,24 @@ function moveCamera() {
 
 document.body.onscroll = moveCamera
 
+function reportWindowSize() {
+  Toastify({
+    text: "To apply window resize, reload the page.",
+    duration: 3000,
+    destination: "/",
+    gravity: "bottom", // `top` or `bottom`
+    position: "right",
+    className: "toast",
+    onClick: function(){} // Callback after click
+  }).showToast();
+}
+
+window.onresize = reportWindowSize;
+
+
 function animate() {
   requestAnimationFrame(animate);
-  earth.rotation.y -= 0.001;
+  earth.rotation.y += 0.001;
   /*torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
@@ -141,5 +156,10 @@ function animate() {
 camera.position.z = 0;
 camera.position.x = 0;
 camera.position.y = 0;
+
+
+window.addEventListener('load', function () {
+  document.getElementById("load").style.display="none"
+})
 
 animate()
