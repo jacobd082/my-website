@@ -150,3 +150,8 @@ span:before
     transform:rotate(405deg);
   }
 }
+
+.monochrome {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}

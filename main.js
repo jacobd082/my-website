@@ -155,10 +155,28 @@ camera.position.y = 0;
 
 
 window.addEventListener('load', function () {
-  document.getElementById("load").style.display="none"
+  //document.getElementById("load").style.display="none"
   document.getElementById("cur").style.display="none"
   document.getElementById("main").style.display="block"
   document.getElementById("bg").style.opacity="100%"
 })
+
+// define a handler
+function doc_keyUp(e) {
+  console.log(e)
+  // this would test for whichever key is 40 (down arrow) and the ctrl key at the same time
+  if (e.altKey && e.code == 'KeyK') {
+    if (document.body.className == "monochrome") {
+      document.body.classList.remove("monochrome");
+    } else {
+      document.body.className = "monochrome";
+    }
+  }
+  if (e.altKey && e.code == 'KeyH') {
+    document.getElementById("bg").style.filter="blur(10px)"
+  }
+}
+// register the handler 
+document.addEventListener('keyup', doc_keyUp, false);
 
 animate()
