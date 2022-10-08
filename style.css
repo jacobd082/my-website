@@ -7,6 +7,7 @@ canvas {
 
 body {
   background:#262626;
+  cursor: wait;
 }
 
 main {

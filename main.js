@@ -170,6 +170,7 @@ window.addEventListener('load', function () {
   document.getElementById("cur").style.display="none"
   document.getElementById("main").style.display="block"
   document.getElementById("bg").style.opacity="100%"
+  document.body.style.cursor="auto"
 })
 
 // define a handler
