@@ -161,6 +161,7 @@ camera.position.y = 0;
 window.addEventListener('load', function () {
   document.getElementById("load").style.display="none"
   document.getElementById("cur").style.display="none"
+  document.getElementById("main").style.display="block"
   document.getElementById("bg").style.opacity="100%"
 })
 
