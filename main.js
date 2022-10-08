@@ -117,6 +117,8 @@ function moveCamera() {
     if (t>1) {
       camera.position.z = 0;
     }
+  } else {
+    camera.position.z = ((-300 * 0.1) * -1);
   }
   console.log(t)
   console.log(camera.position);
@@ -127,7 +129,7 @@ document.body.onscroll = moveCamera
 function reportWindowSize() {
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  
+
 }
 
 window.onresize = reportWindowSize;
