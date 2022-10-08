@@ -9,6 +9,16 @@ import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+
+function toast(txt) {
+  Toastify({
+    text: txt,
+    className: "toast"
+  }).showToast();
+}
+
+
+
 const scene = new THREE.Scene();
 
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -138,6 +148,7 @@ window.onresize = reportWindowSize;
 function animate() {
   requestAnimationFrame(animate);
   earth.rotation.y += 0.001;
+  moon.rotation.y -= 0.0002;
   /*torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
@@ -171,10 +182,36 @@ function doc_keyUp(e) {
     } else {
       document.body.className = "monochrome";
     }
+    toast("Toggled monochrome")
   }
   if (e.altKey && e.code == 'KeyH') {
-    document.getElementById("bg").style.filter="blur(10px)"
+    if (document.getElementById("bg").style.filter=="blur(30px)") {
+      toast("Background reset")
+      document.getElementById("bg").style.filter="blur(0px)"
+    } else {
+      toast("Background blurred")
+      document.getElementById("bg").style.filter="blur(30px)"
+    }
   }
+}
+
+document.getElementById("ac").onclick = function () {
+  if (document.getElementById("bg").style.filter=="blur(30px)") {
+    toast("Background reset")
+    document.getElementById("bg").style.filter="blur(0px)"
+  } else {
+    toast("Background blurred")
+    document.getElementById("bg").style.filter="blur(30px)"
+  }
+}
+
+document.getElementById("co").onclick = function () {
+  if (document.body.className == "monochrome") {
+    document.body.classList.remove("monochrome");
+  } else {
+    document.body.className = "monochrome";
+  }
+  toast("Toggled monochrome")
 }
 // register the handler 
 document.addEventListener('keyup', doc_keyUp, false);

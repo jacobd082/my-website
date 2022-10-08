@@ -155,3 +155,9 @@ span:before
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
+
+.bottomright {
+  position: fixed;
+  right: 0px; bottom: 0px;
+  padding: 10px;
+}
