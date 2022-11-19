@@ -177,14 +177,6 @@ window.addEventListener('load', function () {
 function doc_keyUp(e) {
   console.log(e)
   // this would test for whichever key is 40 (down arrow) and the ctrl key at the same time
-  if (e.altKey && e.code == 'KeyK') {
-    if (document.body.className == "monochrome") {
-      document.body.classList.remove("monochrome");
-    } else {
-      document.body.className = "monochrome";
-    }
-    toast("Toggled monochrome")
-  }
   if (e.altKey && e.code == 'KeyH') {
     if (document.getElementById("bg").style.filter=="blur(30px)") {
       toast("Background reset")
@@ -206,14 +198,7 @@ document.getElementById("ac").onclick = function () {
   }
 }
 
-document.getElementById("co").onclick = function () {
-  if (document.body.className == "monochrome") {
-    document.body.classList.remove("monochrome");
-  } else {
-    document.body.className = "monochrome";
-  }
-  toast("Toggled monochrome")
-}
+
 // register the handler 
 document.addEventListener('keyup', doc_keyUp, false);
 

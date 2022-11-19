@@ -2,25 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/galaxy.4bc14ea5.png" />
+    <link rel="icon" href="/assets/alien.3c7a2eaf.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Drath</title>
-    <meta name="description" content="Hi, I'm Jacob. This is my place on the internet.">
+    <meta name="theme-color" content="#00113b" />
+    <meta name="description" content="Hey, I'm Jacob. This is my place on the internet.">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index.02ac6527.js"></script>
-    <link rel="stylesheet" href="/assets/index.a4835d42.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zzz.jacobdrath.co/">
+    <meta property="og:title" content="Jacob Drath">
+    <meta property="og:description" content="Hey, I'm Jacob. This is my place on the Internet.">
+    <meta property="og:image" content="https://ss1.jacobdrath.co/space.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zzz.jacobdrath.co/">
+    <meta property="twitter:title" content="Jacob Drath">
+    <meta property="twitter:description" content="Hey, I'm Jacob. This is my place on the Internet.">
+    <meta property="twitter:image" content="https://ss1.jacobdrath.co/space.png">
+    <script type="module" crossorigin src="/assets/index.5a0f7ac5.js"></script>
+    <link rel="stylesheet" href="/assets/index.b4ad35c8.css">
   </head>
   <body>
     <canvas id="bg"></canvas>
-    <main>
+    <main id="main">
 
       <div style="height: 90vh;"></div>
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAQAAAAa7ikwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmCRkXOiglvestAAACG0lEQVRIx82Wy07yUBSFTynMdaIOvSQODXHgTBATIiMvQ6NxoNGEqC+jD+At3tCXcKoTY4xUdEq8RJxQlAiez8GmQv0LpYz+lTSn6d5nrX1Wm72rVAuAacLcHOzvg2WhbRtt22BZsLcHs7MQCqlOAIkE3N7iQNs2OpuVy7Z/n3NzA/F4QPLNTahWQWs4OUHHYmCarpPpWAxOTyWnUoH19fbI9dKSVPb2BpOT/vnJJBQKIrSw4FP50BCUy1AsokdG2j9xNCq2fXzAwECLxONjqX5lxTu+vQ1bW96xtTXZe3jYhLy7G76+4P6+0W93Tj4P+bx3zDTh4UE4urqc5w2fWCqlVCSiVCZjGN/f7drjQPZkMsIxNeUhMDwspVxeBiWv4+rKxaWUCteDPT2yvr423U+53Frg+VnWvj4PgbDcG9Vqcx+WlxXQXKBScXG5BfxhGBcXQU3rrI/8pwI17wkHss2NSMTF5RZ4eVFKKWX09nYuUPt6eHryEMjlZB0b65if2l7D4WqM/baKXK5Zq2jJrcNh9OPj31bxR+ToSIbL6mpgAdJpaXYHBy2SBgfh81NabzTaPvnoKJRK0q77+32OurgolRQK6GTSnzyVgvd3GTjz8236ubEhY1BrODuDiYl/RiaJBJyf10dmOh3Q03hcBrqDUkn+JixL7h1cX6PHx4O+s5pIKAQzM7C7i85moViU6+4OdnZgetrvt+UHpjXWCy4GfasAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDktMjVUMjM6NTg6NDArMDA6MDDohDVRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA5LTI1VDIzOjU4OjQwKzAwOjAwmdmN7QAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0wOS0yNVQyMzo1ODo0MCswMDowMM7MrDIAAAAASUVORK5CYII=" style="color: white; height: 24px;" id="mouse" title="Scroll down for content">
       <div style="height: 20vh;"></div>
       <div>
-        <img src="/assets/galaxy.4bc14ea5.png" width="100px" title="See icon credit below">
+        <img src="/assets/alien.3c7a2eaf.png" width="100px" title="See icon credit below">
         <h1 class="bounce">Hi, I'm jacob drath.<span id="cur">&nbsp;</span></h1>
         <p>I'm a front-end web / app developer based in Wisconsin, USA.</p>
         <h3>About me</h3>
@@ -38,18 +53,13 @@
             <a href="https://wx.jacobdrath.co" class="button">Open</a>
         </li>
         <li>
-            <h3>A Real Banana Games</h3>
-            <p>This website hosts all of the games that I make.</p>
-            <a href="https://arealbanana.com" class="button">Open</a>
-        </li>
-        <li>
             <h3>Bots</h3>
             <p>Here are the bots that I have made:</p>
             <ul>
                 <li>
                     <h3>Chicken Nugget Bot</h3>
                     <p>A Twitter bot that tweets every 30 minutes.</p>
-                    <a href="chick-nug-bot" class="button">Learn more...</a>
+                    <a href="https://ss1.jacobdrath.co/chick-nug-bot" class="button">Learn more...</a>
                 </li>
                 <li>
                     <h3>Mr. Krabs Bot</h3>
@@ -83,13 +93,23 @@
       <div>
         <h4>Attributions</h4>
         <ul id="at">
-          <li><a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/alien" title="alien icons">Alien icons created by Freepik - Flaticon</a></li>
           <li><a href="https://www.deviantart.com/lyshastra/art/Free-Space-Galaxy-Texture-435798702" title="space background">Space Background</a></li>
           <li><a href="https://in.pinterest.com/pin/500603314799957668/" title="Earth texture">Earth Texture</a></li>
         </ul>
       </div>
 
     </main>
+    <div id="load">
+      <div class="ring">Loading
+        <span></span>
+      </div>
+      <p style="text-align: center; position: relative; top: 150px; color: rgb(170, 170, 170);"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAQAAAAa7ikwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmCggQAyH4r4KcAAAEJklEQVRIx42VTUjUXRTGf1dUlEiQ8DPRpNQ3jUAXZgQtWqWO9gFRkIXuKkqxRYtcZKuECKJVGZQ5ZNrCyA+kXYGaLmICF042CzFLHZ2IyCa17vMubm+jOdl74L/43/Pc53zcc59r2MBks7Mxhw5BZSVkZ0NcnPOsrMDUFOrrg6dPTcy7d3/iMNGJs7Lg6lUoKcF0daH+fszyMkpJcbvm51F8PKaiAp04gXn1Cq5cMeb9e/5m0uHDkt8vW1Mj7d0reb3Sx49aZ6GQ1N4ulZU5rN8vVVf/hbyhQRoakgoKZB8/lqz9xWevX5fNy5PNz5e9cSMSyFqps1M2P18aGpKtr98g86EhqahImphYm+3AgFRZKYXD0tevUnm59OzZWsybN1JhoeP4rRLZrCxXYkHBenJJunxZ6uqK/Hd1SU1N63F+v6vE75cyM1dlf++edPKka0s06+yUamtdO6yVPX36z9iODue/e/fXKMr6fO5AV/V8jVkrnT3r2ldUJJ07tyHW7tkj6/PJZmUZ2fp6TGIi7NoFNTWupt5eWFiA1FSUloZJT4eUFFhedv74eJifR7OzmLk5CAad3+Nx/vZ28Pvh82cjDQygS5cwL15AcjJ6/hzT1AQVFSgYxMzPw4cPMD8P3745goQER5iZiVJSMKmp0N8PLS2wfz+EQujAAcy1a7GQmwtLS5Cc7Danp8PsLIyNQVoaFBVBeTk6ehSzaZPDfPkC3d0wNeUCj43B3JzbC7BlC4TDkJsbCzExkJoaudv//AM+HwQCmJkZR/DyJWZwEO7ccQd38SImNhZKSzHFxY44Lw+SkiKzmZYGcXGx0a9cUhKUlET+9+2DhoZIEtPTcOsW7NjxN12Ige/fXXkb4QIByMmJLOTkQCCwMXkwCCsrsWhy0h1aKOR6F8WM14vq6jCNjWCMO4/79+HgwejkoRAkJsLkZAymvx9TWemm4E9gnw+Tmwujo2hwEJOTA69fo4WF6Ht6ezEeD/T1GSfNPT1w5gxmZATMbxJ+8yYsLqJPnzBFRfDjB0xMwObN7lt1Nj/7jsrKMK2t6Oe9kG1tdZL76NH6i7l7t/T2rWxenhO6xUVp+3bZQMD5freHD6W6Oun27VUxMzNlx8edFI+PR8Cjo7JVVdKDB1JjY2S9oUHyemU9HtmRkUgy4+NOMP1+KSNjbWG2qkoaHJR27owE8Xpljx1zmfr9a4mKi6UjR6SOjshaYaE0PCxbVRV9Gu358+7RyM93pYbDUkuL9OTJ+lZ0d7uHZ2nJYQsKpOFh6cKFjUfeejyuXadOyZaWSm1t0sLC+gALC1Jbm8PU1rq34D+xWzXhUYMoIwOam1Fp6a9Hn3A4ojXBICQkuPE+fhxGR6G52ZiZmf8VIBJo61aornYyvG2bk2lwsj05Cf39qKfHxExP/4njX97Uz13zu+3AAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTEwLTA4VDE2OjAzOjMyKzAwOjAw+3WYGQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMC0wOFQxNjowMzozMiswMDowMIooIKUAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjItMTAtMDhUMTY6MDM6MzIrMDA6MDDdPQF6AAAAAElFTkSuQmCC"><br><br>See accessibility options on bottom right</p>
+    </div>
+    <div class="bottomright">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAQAAAAa7ikwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmCggQBg9ZDnsWAAABtUlEQVRIx+2UTU4CQRCFu2fY6YoFwZV4AgER1CP4cwDlAATiiQwBRYI3MMYb6A0UDYm6EcO4kdVIfS4aRaabOMaFG95upqpevX5dXUrN8d/QcRORxUWlkknzFQTae3v7U2ckkUD29uD0FHo9LPR60Gohu7tIIhGfGK2hXIZu1yZ9f8eJbhfK5RjkS0vI5aVN0GpBLge+D56HFArQbtt5FxeQTs8gz+fh6cmqkUpltqBq1W7y+AjZbMTv9XV4fXUpn5BtbsLxMdTrsLEx+d/p2HVBAPn8OGFlBXl5cXtrkmBrC8Jw6i6kVDLiikV37fMzZDIKrq/dCWEIvm8aNJt2vF43Md8HETfH1ZWnFLgd9r7FRiM7bportHbHvzzMZKDfdwqQQmFiw3eLwjCWRbK8PG6ytmYuJop2e2oQ5OgIGo1PclN7dmbXDQaQy0VOks2aEYuiVpt5ejk8tPMfHpDV1Rl2pdPmsUTR6RgrPM+skGLRqVzOz5FUKsaLPjiA21u3t651cXMD+/s/Ek838X3Y2YGTE+T+3lZ7d2ce3vb25zi7EH9ds7CgGK9rHQRaD4e/UjzHv+EDR78QtSdMaDcAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTAtMDhUMTY6MDY6MTUrMDA6MDCa3mquAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEwLTA4VDE2OjA2OjE1KzAwOjAw64PSEgAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0xMC0wOFQxNjowNjoxNSswMDowMLyW880AAAAASUVORK5CYII=" id="ac" style="cursor: pointer;" title="Toggle background blur (Alt + H or ⌥ + H)">
+    </div>
     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>

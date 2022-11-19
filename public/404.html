@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - not found.</title>
-    <link rel="icon" href="/alien.png">
+    <title>404 - Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
 </head>
-<body style="background-color: black;">
-    <div style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);">
+<body>
     <center>
-        <a href="/"><img src="/alien.png" width="40px"></a>
-        <p style="color: white; font-family: sans-serif;"><b>404</b></p>   
+        <div style="max-width: 400px;">
+            <img src="/spaceman.png" width="200px">
+            <h1 style="margin-top: 0;margin-bottom: 0;">Looks like you got lost in space...</h1>
+            <p>If you got here by mistake, <a href="/">why don't you go to the home page.</a></p>
+            <p>If you got here by typing a bunch of random stuff in the address bar, stop doing that. You are filling up my error logs.</p>
+        </div>
     </center>
-</div>
 </body>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2 {
+        font-family: 'Manrope', sans-serif;
+    }
+    a {
+        color: white;
+    }
+    </style>
 </html>
