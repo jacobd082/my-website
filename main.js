@@ -139,7 +139,7 @@ document.body.onscroll = moveCamera
 function reportWindowSize() {
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   renderer.setSize(window.innerWidth, window.innerHeight);
-
+  moveCamera()
 }
 
 window.onresize = reportWindowSize;
