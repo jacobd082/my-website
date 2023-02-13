@@ -56,14 +56,14 @@ function addStar() {
   const geometry = new THREE.SphereGeometry(0.15, 24, 24);
   const material = new THREE.MeshStandardMaterial({color: 0xffffff});
   const star = new THREE.Mesh(geometry, material);
-  const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
+  const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(200));
 
   star.position.set(x, y, z);
   scene.add(star);
 }
 
 
-Array(200).fill().forEach(addStar);
+Array(400).fill().forEach(addStar);
 
 
 
@@ -75,16 +75,15 @@ scene.background = spaceTexture;
 const moonTexture = new THREE.TextureLoader().load(moonImg);
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(0.8,40,40),
+  new THREE.SphereGeometry(0.6,40,40),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
   })
 )
 
 scene.add(moon);
-moon.rotateX(0.3)
-moon.position.z = -18;
-moon.position.x  = 8;
+moon.position.z = +2;
+moon.position.x  = -3;
 
 
 
@@ -101,7 +100,7 @@ const earth = new THREE.Mesh(
 
 scene.add(earth);
 earth.rotateX(0.3)
-earth.position.z = -15;
+earth.position.z = -10;
 earth.position.x  = 0;
 
 
@@ -116,11 +115,16 @@ function moveCamera() {
      // upscroll code
     earth.rotation.y -= 0.05;
   }
+  moon.position.x = (st * 0.03)-3
+  console.log(moon.position)
+  if (moon.position.x>7.5) {
+    moon.position.x=7.5
+  }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   //moon.rotation.y += 0.075;
   //moon.rotation.z += 0.05;
 
-  if (t>-300) {
+  if (t>-800) {
     if (Math.sign((t * 0.1) * -1)==1) {
       camera.position.z = ((t * 0.1) * -1);
     }
@@ -128,10 +132,11 @@ function moveCamera() {
       camera.position.z = 0;
     }
   } else {
-    camera.position.z = ((-300 * 0.1) * -1);
+    //camera.position.z = ((-300 * 0.1) * -1);
+    camera.position.z = ((-800 * 0.1) * -1)
   }
-  console.log(t)
-  console.log(camera.position);
+  //console.log(t)
+  //console.log(camera.position);
 }
 
 document.body.onscroll = moveCamera
@@ -148,7 +153,6 @@ window.onresize = reportWindowSize;
 function animate() {
   requestAnimationFrame(animate);
   earth.rotation.y += 0.001;
-  moon.rotation.y -= 0.0002;
   /*torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
