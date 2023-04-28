@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 canvas {
   position: fixed;
   top: 0;
@@ -17,10 +19,12 @@ main {
 }
 
 h1, h2, h3 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
 }
 p, span, a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 .toast {

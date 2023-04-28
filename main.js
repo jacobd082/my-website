@@ -1,5 +1,5 @@
 import './style.css'
-import spaceImg from './space.png'
+import spaceImg from './space.jpg'
 import './mouse.png'
 import moonImg from './moon.jpg'
 import galImg from './galaxy.png'
