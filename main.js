@@ -1,9 +1,8 @@
 import './style.css'
-import spaceImg from './space.jpg'
-import './mouse.png'
-import moonImg from './moon.jpg'
-import galImg from './galaxy.png'
-import earthImg from './earth.jpg'
+import spaceImg from './media/space.jpg'
+import './media/mouse.png'
+import moonImg from './media/moon.jpg'
+import earthImg from './media/earth.jpg'
 
 import * as THREE from 'three';
 
