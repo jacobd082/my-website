@@ -19,7 +19,7 @@
 			<div id="middletext">
 				<h1>404</h1>
 				<h2>Page Not Found</h2>
-				<a href="/">Go to the homepage</a>
+				<a href="/"><span>Go to the homepage</span></a>
 			</div>
 			<div id="sun" title="The Sun"></div>
 			<div id="moon" title="The Moon"></div>
@@ -52,10 +52,14 @@
 		</div>
 	</body>
 	<script>
+		setTimeout(() => {
+			document.getElementById("middletext").style.zIndex = "999"
+		}, 1000)
 		dragElement(document.getElementById("sun"))
 
 		function dragElement(elmnt) {
 			let hasSunGoneUnderHorizon = false
+			let hasTextBeenHidden = false
 			var pos1 = 0,
 				pos2 = 0,
 				pos3 = 0,
@@ -86,6 +90,16 @@
 
 				// Easter Egg??
 				if (elmnt.id == "sun") {
+					if (!hasTextBeenHidden) {
+						hasTextBeenHidden = true
+						const text = document.getElementById("middletext")
+						text.style.animation = "opacity-disappear 1s"
+						text.style.opacity = "0"
+						setTimeout(() => {
+							text.style.display = "none"
+						}, 1000)
+					}
+					document.getElementById("middletext").style.zIndex = "2"
 					if (!hasSunGoneUnderHorizon) {
 						elmnt.style.top = elmnt.offsetTop - pos2 + "px"
 						elmnt.style.left = elmnt.offsetLeft - pos1 + "px"
@@ -107,25 +121,17 @@
 									const moon = document.getElementById("moon")
 									moon.style.transition = "3s"
 									moon.style.opacity = "1"
-                                    setTimeout(() => {
-                                        moon.style.transition = "0s"
-                                        dragElement(moon)
-                                    }, 3000);
+									setTimeout(() => {
+										moon.style.transition = "0s"
+										dragElement(moon)
+									}, 3000)
 								}, 1000)
 							}, 2000)
 						}
 					}
 				} else if (elmnt.id == "moon") {
-                    elmnt.style.top = elmnt.offsetTop - pos2 + "px"
+					elmnt.style.top = elmnt.offsetTop - pos2 + "px"
 					elmnt.style.left = elmnt.offsetLeft - pos1 + "px"
-
-                    // Hide the 404 text, by this point who really cares about it?
-                    const text = document.getElementById("middletext")
-                    text.style.animation = "opacity-disappear 2s"
-                    text.style.opacity = "0"
-                    setTimeout(() => {
-                        text.style.display = "none"
-                    }, 2000)
 				}
 			}
 
@@ -172,7 +178,7 @@
 			color: white;
 			text-align: center;
 			animation: text-appear 1s;
-			z-index: 3;
+			z-index: 2;
 		}
 		@keyframes text-appear {
 			0% {
