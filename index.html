@@ -1,86 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="media/alien.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob Drath</title>
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Hey, I'm Jacob. This is my place on the internet.">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.jacobdrath.com/">
-    <meta property="og:title" content="Jacob Drath">
-    <meta property="og:description" content="Hey, I'm Jacob. This is my place on the Internet.">
-    <!-- <meta property="og:image" content="https://www.jacobdrath.com/space.png"> -->
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="media/alien.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jacob Drath</title>
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Hey, I'm Jacob. This is my place on the internet." />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.jacobdrath.com/" />
+		<meta property="og:title" content="Jacob Drath" />
+		<meta
+			property="og:description"
+			content="Hey, I'm Jacob. This is my place on the Internet." />
+		<!-- <meta property="og:image" content="https://www.jacobdrath.com/space.png"> -->
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://www.jacobdrath.com/">
-    <meta property="twitter:title" content="Jacob Drath">
-    <meta property="twitter:description" content="Hey, I'm Jacob. This is my place on the Internet.">
-    <!-- <meta property="twitter:image" content="https://ss1.jacobdrath.co/space.png"> -->
-  </head>
-  <body>
-    <canvas id="bg"></canvas>
-    <main id="main">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:url" content="https://www.jacobdrath.com/" />
+		<meta property="twitter:title" content="Jacob Drath" />
+		<meta
+			property="twitter:description"
+			content="Hey, I'm Jacob. This is my place on the Internet." />
+		<!-- <meta property="twitter:image" content="https://ss1.jacobdrath.co/space.png"> -->
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+		<main id="main">
+			<div style="height: 90vh"></div>
+			<div style="display: flex; align-items: center">
+				<img
+					src="media/mouse.png"
+					style="color: white; height: 24px"
+					id="mouse"
+					title="Scroll down for content" />
+				<p style="margin: 0; margin-left: 10px; opacity: 0.8">Scroll Down</p>
+			</div>
+			<div style="height: 20vh"></div>
+			<div>
+				<h1>
+					Hey, I'm Jacob Drath.<span class="blinking-cursor">&nbsp;</span>
+				</h1>
+				<p>I'm a website and app developer from Wisconsin, USA.</p>
+				<h2>About me</h2>
+				<p style="max-width: 600px">
+					I started learning computer programming in 2021 in my free time. Since
+					then, I have started developing my own websites, apps, and extensions.
+					I am fully self-taught, using free resources from the internet. I have
+					come a long way since the start, as I am constantly learning and
+					improving.
+				</p>
+				<h3 id="socials">Socials</h3>
+				<p
+					align="left"
+					style="
+						background-color: white;
+						width: fit-content;
+						padding: 5px;
+						border-radius: 10px;
+					">
+					<a
+						href="http://www.instagram.com/ishatglitter/"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg"
+							width="32"
+							height="32"
+					/></a>
+					<a
+						href="https://www.twitter.com/Jacobd082"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg"
+							width="32"
+							height="32"
+					/></a>
+					<a
+						href="https://www.facebook.com/jacobdrath/"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg"
+							width="32"
+							height="32"
+					/></a>
+					<a
+						href="https://www.github.com/jacobd082"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg"
+							width="32"
+							height="32"
+					/></a>
+				</p>
+				<h3 id="skills">Skills</h3>
 
-      <div style="height: 90vh;"></div>
-      <img src="media/mouse.png" style="color: white; height: 24px;" id="mouse" title="Scroll down for content">
-      <div style="height: 20vh;"></div>
-      <div>
-        <h1 class="bounce">Hi, I'm Jacob Drath.<span id="cur">&nbsp;</span></h1>
-        <p>I'm a developer from Wisconsin, USA.</p>
-        <h2>About me</h2>
-        <p style="max-width: 600px;">I started learning computer programming in 2021 in my free time. Since then, I  have started developing my own websites, apps, and extensions. I am fully self-taught, using free resources from the internet. I have come a long way since the start, as I am constantly learning and improving.</p>
-        <h3 id="socials">Socials</h3>  
-        <p align="left" style="background-color: white; width: fit-content; padding: 5px; border-radius: 10px;"> <a href="https://www.facebook.com/jacobdrath/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="32" height="32" /></a> <a href="https://www.github.com/jacobd082" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="http://www.instagram.com/jacob_d082/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> <a href="https://www.stackoverflow.com/users/18673158/jacob" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/stackoverflow.svg" width="32" height="32" /></a> <a href="https://www.twitter.com/Jacobd082" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /></a></p>
-        <h3 id="skills">Skills</h3>
+				<p
+					align="left"
+					style="
+						background-color: white;
+						width: fit-content;
+						padding: 5px;
+						border-radius: 10px;
+					">
+					<img
+						src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+						width="36"
+						height="36"
+						alt="JavaScript" />
+					<a href="https://www.unity.com/" target="_blank" rel="noreferrer"
+						><img
+							src="https://cdn.freebiesupply.com/logos/large/2x/unity-69-logo-png-transparent.png"
+							width="36"
+							height="36"
+							alt="Unity"
+					/></a>
+					<a href="https://www.python.org/" target="_blank" rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
+							width="36"
+							height="36"
+							alt="Python"
+					/></a>
+					<a
+						href="https://developer.apple.com/swift/"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/swift-colored.svg"
+							width="36"
+							height="36"
+							alt="Swift"
+					/></a>
+					<a href="https://php.net" target="_blank" rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg"
+							width="36"
+							height="36"
+							alt="PHP"
+					/></a>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+							width="36"
+							height="36"
+							alt="HTML5"
+					/></a>
+					<a
+						href="https://www.w3.org/TR/CSS/#css"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+							width="36"
+							height="36"
+							alt="CSS3"
+					/></a>
+					<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+							width="36"
+							height="36"
+							alt="NodeJS"
+					/></a>
+					<a href="https://svelte.dev/" target="_blank" rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/svelte-colored.svg"
+							width="36"
+							height="36"
+							alt="NodeJS"
+					/></a>
+					<a href="https://vitejs.dev" target="_blank" rel="noreferrer"
+						><img
+							src="https://vitejs.dev/logo-with-shadow.png"
+							width="36"
+							height="36"
+							alt="NodeJS"
+					/></a>
+					<a
+						href="https://firebase.google.com/"
+						target="_blank"
+						rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg"
+							width="36"
+							height="36"
+							alt="Firebase"
+					/></a>
+					<a href="https://www.figma.com/" target="_blank" rel="noreferrer"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg"
+							width="36"
+							height="36"
+							alt="Figma"
+					/></a>
+					<a href="https://mongodb.com"
+						><img
+							src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb.svg"
+							width="36"
+							height="36"
+							alt="MongoDB"
+					/></a>
+				</p>
+				<p>
+					<i
+						>You can view more
+						<a href="https://github.com/jacobd082#skills" style="color: white"
+							>on my GitHub</a
+						></i
+					>
+				</p>
+			</div>
+			<h2>Public Projects:</h2>
+			<div class="projects">
+				<div class="project squidagram">
+					<h3>Squidagram</h3>
+					<p>The #1 Social Media Site for Squids!</p>
 
-        <p align="left" style="background-color: white; width: fit-content; padding: 5px; border-radius: 10px;"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /> <a href="https://www.unity.com/" target="_blank" rel="noreferrer"><img src="https://cdn.freebiesupply.com/logos/large/2x/unity-69-logo-png-transparent.png" width="36" height="36" alt="Unity" /></a> <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/swift-colored.svg" width="36" height="36" alt="Swift" /></a> <a href="https://php.net" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" width="36" height="36" alt="PHP"></a> <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a> <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a> <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a> <a href="https://vitejs.dev" target="_blank" rel="noreferrer"><img src="https://vitejs.dev/logo-with-shadow.png" width="36" height="36" alt="NodeJS" /></a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase" /></a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a> <a href="https://mongodb.com"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb.svg" width="36" height="36" alt="MongoDB"></a></p>
-        <p><i>You can view more <a href="https://github.com/jacobd082#skills" style="color:white;">here</a></i></p>
-      </div>
-      <!--
-      <h2>Projects:</h2>
-      <ul>
-        <li>
-          <h3>NXT News</h3>
-          <p>A news website that gets its new from multiple popular sources.</p>
-          <a href="https://nxt.jacobdrath.co" class="button">Open</a>
-        </li>
-        <li>
-          <h3>Squidagram</h3>
-          <p>Like Instagram - but for squids</p>
-          
-          <a href="https://squidagram.jacobdrath.co" class="button">Open</a>
-        </li>
-        <li>
-          <h3>Simple Weather</h3>
-          <p>A weather website that describes the weather <i>very</i> simply.</p>
-          <a href="https://wx.jacobdrath.co" class="button">Open</a>
-        </li>
-        <li>
-          <h3>Chicken Nugget Bot</h3>
-          <p>A Twitter bot that tweets every 30 minutes.</p>
-          <a href="chick-nug-bot" class="button">Learn more...</a>
-        </li>
-        -->
-    </ul>
-      <div style="height: 20vh;"></div>
+					<a
+						href="https://squidagram.com"
+						class="button"
+						target="_blank"
+						rel="noreferrer"
+						>Open</a
+					>
+				</div>
+				<div class="project yt2music">
+					<h3>YT2Music</h3>
+					<p>
+						A python script for downloading YouTube videos and converting them
+						to MP3s.
+					</p>
 
-    </main>
-    <div id="load">
-      <div class="ring">Loading
-        <span></span>
-      </div>
-      <p style="text-align: center; position: relative; top: 150px; color: rgb(170, 170, 170);"><img src="media/accessibility.png"><br><br>See accessibility options on bottom right</p>
-    </div>
-    <div class="bottomright">
-      <img src="media/eye.png" id="ac" style="cursor: pointer;" title="Toggle background blur (Alt + H or ⌥ + H)">
-    </div>
-    <script type="module" src="/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script defer src="/_vercel/insights/script.js"></script>
-  </body>
+					<a
+						href="https://github.com/jacobd082/YT2Music"
+						class="button"
+						target="_blank"
+						rel="noreferrer"
+						>Open</a
+					>
+				</div>
+			</div>
+			<div style="height: 20vh"></div>
+		</main>
+		<div id="load">
+			<div class="ring">
+				Loading
+				<span id="dot"></span>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script defer src="/_vercel/insights/script.js"></script>
+	</body>
 </html>

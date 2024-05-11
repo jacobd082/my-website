@@ -114,10 +114,11 @@ function moveCamera() {
      // upscroll code
     earth.rotation.y -= 0.05;
   }
-  moon.position.x = (st * 0.03)-3
-  console.log(moon.position)
+  moon.position.x = (st * 0.03)-6
   if (moon.position.x>7.5) {
     moon.position.x=7.5
+
+    moon.position.z=(moon.position.x)
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   //moon.rotation.y += 0.075;
@@ -136,6 +137,15 @@ function moveCamera() {
   }
   //console.log(t)
   //console.log(camera.position);
+
+  // Blur BG
+  const amountToBlur = (window.scrollY - (window.innerHeight - 200))
+
+  if (amountToBlur>0) {
+    document.getElementById("bg").style.filter = `blur(${amountToBlur / 50}px)`
+  } else {
+    document.getElementById("bg").style.filter = `blur(0px)`
+  }
 }
 
 document.body.onscroll = moveCamera
@@ -170,39 +180,10 @@ camera.position.y = 0;
 
 window.addEventListener('load', function () {
   document.getElementById("load").style.display="none"
-  document.getElementById("cur").style.display="none"
   document.getElementById("main").style.display="block"
   document.getElementById("bg").style.opacity="100%"
   document.body.style.cursor="auto"
 })
 
-// define a handler
-function doc_keyUp(e) {
-  console.log(e)
-  // this would test for whichever key is 40 (down arrow) and the ctrl key at the same time
-  if (e.altKey && e.code == 'KeyH') {
-    if (document.getElementById("bg").style.filter=="blur(30px)") {
-      toast("Background reset")
-      document.getElementById("bg").style.filter="blur(0px)"
-    } else {
-      toast("Background blurred")
-      document.getElementById("bg").style.filter="blur(30px)"
-    }
-  }
-}
-
-document.getElementById("ac").onclick = function () {
-  if (document.getElementById("bg").style.filter=="blur(30px)") {
-    toast("Background reset")
-    document.getElementById("bg").style.filter="blur(0px)"
-  } else {
-    toast("Background blurred")
-    document.getElementById("bg").style.filter="blur(30px)"
-  }
-}
-
-
-// register the handler 
-document.addEventListener('keyup', doc_keyUp, false);
 
 animate()

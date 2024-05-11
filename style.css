@@ -20,7 +20,14 @@ main {
 
 h1, h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
+}
+h1 {
+  font-size: 47px;
+  margin-top: 0;
+}
+h2 {
+  font-size: 25px;
 }
 p, span, a {
   font-family: 'Josefin Sans', sans-serif;
@@ -43,16 +50,20 @@ p, span, a {
   100%{bottom: 0px;}
 }
 
-#cur {
-  width: 3px;
-  background-color: white;
-  animation: cur 1s;
-  animation-iteration-count: infinite;
+.blinking-cursor {
+  display: inline-block;
+  font-size: 60px;
+  width: 2px;
+  animation: 1s blink step-end infinite;
+  margin-left: 5px;
 }
-@keyframes cur {
-  0%{opacity: 0%;}
-  50%{opacity: 100%;}
-  100%{opacity: 0%;}
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
 }
 
 .button {
@@ -109,7 +120,7 @@ p, span, a {
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
-span
+span#dot
 {
   display:block;
   position:absolute;
@@ -121,7 +132,7 @@ span
   transform-origin:left;
   animation:animate 2s linear infinite;
 }
-span:before
+span#dot:before
 {
   content:'';
   position:absolute;
@@ -165,4 +176,46 @@ span:before
   position: fixed;
   right: 0px; bottom: 0px;
   padding: 10px;
+}
+
+.projects {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project {
+  backdrop-filter: blur(2px);
+  width: fit-content;
+  transition-duration: 0.5s;
+  padding: 20px;
+  padding-left: 15px;
+  max-width: 200px;
+}
+.project > h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.project > p {
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+
+.squidagram {
+  border: #3588e3 2px solid;
+  border-radius: 10px;
+}
+.squidagram:hover {
+  background-color: #3588e3;
+  border: #b5d9ff 2px solid;
+}
+
+.yt2music {
+  border: red 2px solid;
+  border-radius: 10px;
+}
+.yt2music:hover {
+  background-color: red;
+  border: rgb(255, 77, 77) 2px solid;
 }
