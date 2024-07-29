@@ -219,3 +219,12 @@ span#dot:before
   background-color: red;
   border: rgb(255, 77, 77) 2px solid;
 }
+
+.aura {
+  border: rgb(33, 40, 68) 2px solid;
+  border-radius: 10px;
+}
+.aura:hover {
+  background-color: rgb(33, 40, 68);
+  border: rgb(91, 97, 123) 2px solid;
+}
