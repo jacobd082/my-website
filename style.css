@@ -178,6 +178,7 @@ span#dot:before
   padding-bottom: 15px;
   justify-content: space-between;
   transition-duration: 0.5s;
+  z-index: 20;
 }
 
 .topbar > * {
