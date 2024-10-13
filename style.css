@@ -167,6 +167,42 @@ span#dot:before
   }
 }
 
+.topbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: calc(100vw - 40px);
+  display: flex;
+  background-color: transparent;
+  padding: 20px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  transition-duration: 0.5s;
+}
+
+.topbar > * {
+  margin: 0;
+  line-height: 1;
+}
+
+.topbar > div > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topbardot {
+  opacity: 0.5;
+}
+
+.about {
+  max-width: 600px;
+}
+
+.about > p {
+  line-height: 1.3;
+  font-size: 1.1em;
+}
+
 .monochrome {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
@@ -202,6 +238,12 @@ span#dot:before
   margin-bottom: 15px;
 }
 
+@media (max-width: 550px) {
+  .project {
+    width: 100vw !important;
+  }
+}
+
 .squidagram {
   border: #3588e3 2px solid;
   border-radius: 10px;
@@ -220,11 +262,66 @@ span#dot:before
   border: rgb(255, 77, 77) 2px solid;
 }
 
-.aura {
-  border: rgb(33, 40, 68) 2px solid;
+.mywebsite {
+  border: #563E6C 2px solid;
   border-radius: 10px;
 }
-.aura:hover {
-  background-color: rgb(33, 40, 68);
-  border: rgb(91, 97, 123) 2px solid;
+.mywebsite:hover {
+  background-color: #563E6C;
+  border: #6e5189 2px solid;
 }
+
+.steamstats {
+border: #1e2a44 2px solid;
+border-radius: 10px;
+}
+.steamstats:hover {
+background-color: #1e2a44;
+border: rgb(36, 51, 84) 2px solid;
+}
+
+/* This is from w3 tutorials */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: 'Josefin Sans', sans-serif;
+  color: inherit;
+  border: none;
+  padding: 0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #272727;
+  min-width: 160px;
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #585858;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(111, 111, 111);}

@@ -9,14 +9,6 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 
-function toast(txt) {
-  Toastify({
-    text: txt,
-    className: "toast"
-  }).showToast();
-}
-
-
 
 const scene = new THREE.Scene();
 
@@ -146,6 +138,10 @@ function moveCamera() {
   } else {
     document.getElementById("bg").style.filter = `blur(0px)`
   }
+
+  document.getElementById("scrolldown").style.opacity = (window.scrollY>80) ? 0 : 1
+  document.getElementById("topbar").style.background = (window.scrollY>10) ? "rgb(17, 17, 22)" : "transparent"
+
 }
 
 document.body.onscroll = moveCamera

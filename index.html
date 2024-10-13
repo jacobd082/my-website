@@ -9,10 +9,6 @@
 		<meta
 			name="description"
 			content="Hey, I'm Jacob. This is my place on the internet." />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.jacobdrath.com/" />
@@ -34,29 +30,115 @@
 	<body>
 		<canvas id="bg"></canvas>
 		<main id="main">
+			<div class="topbar" id="topbar">
+				<p style="font-weight: bold">Jacob D</p>
+				<div style="display: flex;align-items: center;">
+					<a
+						href="https://www.github.com/jacobd082"
+						target="_blank"
+						rel="noreferrer"
+						>github</a
+					>
+					&nbsp;<span class="topbardot">•</span>&nbsp;
+					<div class="dropdown">
+						<button class="dropbtn">socials</button>
+						<div class="dropdown-content">
+							<a
+							href="https://www.instagram.com/ishatglitter"
+							target="_blank"
+							rel="noreferrer"
+							>Instagram</a
+						>
+						<div class="dropdown-content"></div>
+							<a
+							href="https://www.twitter.com/bedazzledtoe"
+							target="_blank"
+							rel="noreferrer"
+							>Twitter</a
+						>
+						<div class="dropdown-content"></div>
+							<a
+							href="https://mastodon.social/@bedazzledfrog"
+							target="_blank"
+							rel="noreferrer"
+							>Mastodon</a
+						>
+						<div class="dropdown-content"></div>
+							<a
+							href="https://www.squidagram.com/squid/squizard"
+							target="_blank"
+							rel="noreferrer"
+							>Squidagram</a
+						>
+						<div class="dropdown-content"></div>
+							<a
+							href="https://steamcommunity.com/id/bedazzledtoe/"
+							target="_blank"
+							rel="noreferrer"
+							>Steam</a
+						>
+						</div>
+					</div>
+					&nbsp;<span class="topbardot">•</span>&nbsp;
+					<div class="dropdown">
+						<button class="dropbtn">sites</button>
+						<div class="dropdown-content">
+							<a
+							href="https://www.squidagram.com"
+							target="_blank"
+							rel="noreferrer"
+							>Squidagram</a
+						>
+						<a
+							href="https://steam.jacobdrath.com"
+							target="_blank"
+							rel="noreferrer"
+							>Steam Stats</a
+						>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div style="height: 90vh"></div>
-			<div style="display: flex; align-items: center">
+			<div
+				style="display: flex; align-items: center; transition-duration: 0.5s"
+				id="scrolldown">
 				<img
-					src="media/mouse.png"
-					style="color: white; height: 24px"
+					src="media/up-arrow.png"
+					style="color: white; height: 24px; width: 24px;opacity: 0.8;"
 					id="mouse"
 					title="Scroll down for content" />
-				<p style="margin: 0; margin-left: 10px; opacity: 0.8">Scroll Down</p>
+				<p style="margin: 0; margin-left: 10px; opacity: 0.8">Scroll down for info about me</p>
 			</div>
 			<div style="height: 20vh"></div>
 			<div>
 				<h1>
 					Hey, I'm Jacob Drath.<span class="blinking-cursor">&nbsp;</span>
 				</h1>
-				<p>I'm a website and app developer from Wisconsin, USA.</p>
 				<h2>About me</h2>
-				<p style="max-width: 600px">
-					I started learning computer programming in 2021 in my free time. Since
-					then, I have started developing my own websites, apps, and extensions.
-					I am fully self-taught, using free resources from the internet. I have
-					come a long way since the start, as I am constantly learning and
-					improving.
-				</p>
+				<div class="about">
+					<p>Hello! My name is Jacob. I'm a high school student in Wisconsin.</p>
+
+					<p>
+						In my free time, I'm a hobbyist programmer. I've created multiple
+						websites (Including the one you're on now!). I first started coding
+						by learning HTML in 2021. Since then, I have expanded my knowledge
+						to web frameworks like React and Svelte, Swift and SwiftUI for iOS
+						apps, server-side technologies like PHP, Node, and MongoDB, and
+						scripting languages like Python and C#.
+					</p>
+
+					<p>
+						I'm fully self-taught and have never attended a programming class. I
+						have gained my skills using free resources and documentation from
+						the internet.
+					</p>
+
+					<p>
+						I hope to get an education in computer science and work in the tech
+						industry after graduating.
+					</p>
+				</div>
 				<h3 id="socials">Socials</h3>
 				<p
 					align="left"
@@ -224,14 +306,40 @@
 					>
 				</p>
 			</div>
-			<h2>Public Projects:</h2>
+			<h2 id="projects">Public Projects:</h2>
 			<div class="projects">
+				<div class="project mywebsite">
+					<h3>My Website</h3>
+					<p>You're looking at it right now.</p>
+
+					<a
+						href="https://github.com/jacobd082/my-website"
+						class="button"
+						target="_blank"
+						rel="noreferrer"
+						>View on GitHub</a
+					>
+				</div>
 				<div class="project squidagram">
 					<h3>Squidagram</h3>
-					<p>The #1 Social Media Site for Squids!</p>
+					<p>A social media site for squids.</p>
 
 					<a
 						href="https://squidagram.com"
+						class="button"
+						target="_blank"
+						rel="noreferrer"
+						>Open</a
+					>
+				</div>
+				<div class="project steamstats">
+					<h3>Steam Stats</h3>
+					<p>
+						A website for viewing cool statistics your Steam profile, such as your total time played.
+					</p>
+
+					<a
+						href="https://steam.jacobdrath.com"
 						class="button"
 						target="_blank"
 						rel="noreferrer"
@@ -253,20 +361,6 @@
 						>Open</a
 					>
 				</div>
-				<div class="project aura">
-					<h3>Aura</h3>
-					<p>
-						A modern, customizable terminal app for MacOS.
-					</p>
-
-					<a
-						href="https://github.com/jacobd082/Aura"
-						class="button"
-						target="_blank"
-						rel="noreferrer"
-						>Learn More & Download</a
-					>
-				</div>
 			</div>
 			<div style="height: 20vh"></div>
 		</main>
@@ -276,11 +370,13 @@
 				<span id="dot"></span>
 			</div>
 		</div>
-		<a rel="me" href="https://mastodon.social/@bedazzledfrog" style="display:none;">Mastodon</a>
+		<a
+			rel="me"
+			href="https://mastodon.social/@bedazzledfrog"
+			style="display: none"
+			>Mastodon</a
+		>
 		<script type="module" src="/main.js"></script>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 		<script defer src="/_vercel/insights/script.js"></script>
 	</body>
 </html>
