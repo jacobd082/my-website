@@ -107,10 +107,9 @@ function moveCamera() {
     earth.rotation.y -= 0.05;
   }
   moon.position.x = (st * 0.03)-6
-  if (moon.position.x>7.5) {
-    moon.position.x=7.5
-
-    moon.position.z=(moon.position.x)
+  if (moon.position.x >= 7.5) {
+    moon.position.x = 7.5;
+    moon.position.z += (7.5 - moon.position.z) * 0.1; // Smoothly approach target
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   //moon.rotation.y += 0.075;
